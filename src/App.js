@@ -8,11 +8,11 @@ function App() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [accountData, setAccountData] = useState({
-    email: "Carrying",
-    first_name: "Carrying", 
-    last_name: "Carrying",
-    image_profile: "Carrying",
-    token: "Carrying"
+    email: "Loading",
+    first_name: "Loading", 
+    last_name: "Loading",
+    image_profile: "Loading",
+    token: "Loading"
   })
   const [logged, setLogged] = useState(false)
 
@@ -69,11 +69,11 @@ function App() {
           localStorage.clear()
           setLogged(false)
           setAccountData({
-            email: "Carrying",
-            first_name: "Carrying", 
-            last_name: "Carrying",
-            image_profile: "Carrying",
-            token: "Carrying"
+            email: "Loading",
+            first_name: "Loading", 
+            last_name: "Loading",
+            image_profile: "Loading",
+            token: "Loading"
           })
         }}>
         Log out</button>
