@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
@@ -8,11 +8,11 @@ function App() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [accountData, setAccountData] = useState({
-    email: "Carregando",
-    first_name: "Carregando", 
-    last_name: "Carregando",
-    image_profile: "Carregando",
-    token: "Carregando"
+    email: "Carrying",
+    first_name: "Carrying", 
+    last_name: "Carrying",
+    image_profile: "Carrying",
+    token: "Carrying"
   })
   const [logged, setLogged] = useState(false)
 
@@ -55,7 +55,7 @@ function App() {
           })
           .catch((erro)=>console.log(erro))
 
-        }} type="submit"/>
+        }} value='Login' type="submit"/>
         <p>{logged ? "Logged" : "No Logged"}</p>
         <div>
           <h1>Account</h1>
@@ -69,13 +69,14 @@ function App() {
           localStorage.clear()
           setLogged(false)
           setAccountData({
-            email: "Carregando",
-            first_name: "Carregando", 
-            last_name: "Carregando",
-            image_profile: "Carregando",
-            token: "Carregando"
+            email: "Carrying",
+            first_name: "Carrying", 
+            last_name: "Carrying",
+            image_profile: "Carrying",
+            token: "Carrying"
           })
-        }}>Deslogar</button>
+        }}>
+        Log out</button>
     </div>
   );
 }
