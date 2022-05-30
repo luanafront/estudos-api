@@ -2,6 +2,8 @@
 import './App.css';
 import axios from 'axios';
 import React, {useState, useEffect} from 'react';
+import github from "./github.png";
+
 
 
 function App() {
@@ -77,7 +79,14 @@ function App() {
           })
         }}>
         Log out</button>
+        <div>
+          <a href="https://github.com/luanafront/estudos-api">
+            <img alt="aprendendo" className='imagem__github' src={github}/> 
+          </a>
+        </div>
+        
     </div>
+    
   );
 }
 
